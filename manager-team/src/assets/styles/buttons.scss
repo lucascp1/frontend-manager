@@ -1,0 +1,43 @@
+@import '../../assets/styles/colors.scss';
+
+.btn{
+    font-size: 1em;
+    font-weight: 900;
+    font-family: $font-bold;
+    text-decoration: none;
+    background: $dark-orange;
+    color: $brown;
+    border: 2px solid $dark-orange;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.8s ease, color 0.8s ease-out;
+    letter-spacing: 0.5px;
+    padding: 15px 35px;
+}
+
+.btn:hover{
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    border: 2px solid $light-orange;
+}
+
+.div-but {
+    display: flex;
+    flex-direction: column;
+
+    span{
+        color: $white;
+        font-family: $font-thin;
+        padding-bottom: 4px;
+    };
+
+    b{
+        color: $dark-orange;
+        font-family: $font-bold;
+        padding-bottom: 4px;
+        cursor: pointer;
+
+    };
+}

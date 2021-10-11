@@ -1,0 +1,14 @@
+.images-progress{
+    display: inline-flex;
+
+    img{
+        width: 50px;
+        padding: 2em;
+        opacity: 50%;
+    } 
+
+}
+.active{
+    opacity: 100% !important;
+} 
+    

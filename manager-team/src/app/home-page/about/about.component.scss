@@ -1,0 +1,51 @@
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/inputs.scss';
+@import '../../../assets/styles/buttons.scss';
+
+article{
+    color: $white;
+}
+
+.container-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2em 3em;
+    gap: 10em;
+}
+
+.content-about{
+    width: 400px;
+
+    h1{
+        font-size: 60px;
+        margin: 8px 0;
+        font-family: $font-bold;
+    }
+
+    p{
+        font-size: 20px;
+        font-family: $font-thin;
+        margin: 0px;
+        opacity: 80%;
+    }
+}
+
+.container-mvv{
+    width: 200px;
+    h1{
+        font-size: 30px;
+        margin: 20px 0 8px 0;
+        font-family: $font-bold;
+
+    }
+
+    p{
+        font-size: 15px;
+        font-family: $font-thin;
+        margin-bottom: 20px;
+        opacity: 80%;
+
+    } 
+}
+

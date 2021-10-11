@@ -1,0 +1,40 @@
+@font-face {
+    font-family: MontserratLight;
+    src: url(../fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: MontserratMedium;
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: MontserratRegular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: MontserratBold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+$font-thin: MontserratLight;
+$font-medium: MontserratMedium;
+$font-regular: MontserratRegular;
+$font-bold: MontserratBold;
+
+$dark-red: #8C1B11;
+$light-red: #D94423;
+
+$dark-orange: #FD7B30;
+$light-orange: #F27F3D;
+
+$brown: #450A0A;
+
+$blue: #295773;
+
+$white: #FFFFFF;
+
+$black: #131313;
+
+

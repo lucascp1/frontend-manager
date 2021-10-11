@@ -1,0 +1,22 @@
+<section class="container-login">
+    <div class="title-form">
+        <h1>LOG<span class="border-h1-bottom">IN</span></h1>
+    </div>
+    <form id="form_contato" method="post">
+          <div class="inputs-form" >
+            <label for="">Login:</label>
+            <input onkeyup="validacao_nome_contato()" id="ipt_nome_contato" class="inputs-template inputs-login" 
+             type="text" placeholder="Fulano Silva">
+          </div>
+          <div class="inputs-form">
+            <label for="">Senha:</label>
+            <input onkeyup="validacao_email_contato()" id="ipt_email_contato" class="inputs-template inputs-login"
+             type="password" placeholder="Digite seu e-mail">
+          </div>
+    </form>
+    <div class="div-but">
+        <span>Não possuí conta?<b (click)="redirectRegister()"> Registre-se</b></span>
+        <button (click)="redirectOnboard()" class="btn" type="button">Entrar</button>
+        <span class="span_msg" id="span_msg"></span>
+      </div>
+</section>

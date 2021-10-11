@@ -1,0 +1,47 @@
+<!-- <app-progress-bar></app-progress-bar> -->
+<section class="container-form-steps">
+  <section class="form-steps">
+    <div class="title-form">
+      <h1>CADASTRE SUAS <span class="border-h1-bottom">INFORMAÇÕES</span></h1>
+    </div>
+    <app-progress-bar [currentStep]="step" [totalSteps]="3"></app-progress-bar>
+    <!-- Property Binding -->
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" [ngClass]="aplyCssError('field')">
+      <section *ngIf="teamForm" class="container-time">
+        <h1>TI<span class="border-h1-bottom">ME</span></h1>
+        <div class="div-inputs" formGroupName="time">
+          <input type="text" placeholder="Nome do time" formControlName="nomedotime" id="nomedotime">
+          <input type="text" placeholder="Dono" formControlName="dono" id="dono">
+          <input type="text" placeholder="Técnico" formControlName="tecnico" id="tecnico">
+        </div>
+      </section>
+
+      <section *ngIf="playerForm" class="container-jogador">
+        <h1>JOGAD<span class="border-h1-bottom">OR</span></h1>
+        <div class="div-inputs" formGroupName="jogador">
+          <input type="text" placeholder="Nome do jogador" formControlName="nomedojogador" id="nomedojogador">
+          <input type="text" placeholder="Altura" formControlName="altura" id="altura">
+          <input type="text" placeholder="Posição" formControlName="posicao" id="posicao">
+        </div>
+      </section>
+
+      <section *ngIf="submitButton" class="container-quadra">
+        <h1>QUAD<span class="border-h1-bottom">RA</span></h1>
+        <div class="div-inputs" formGroupName="quadra">
+          <input type="text" placeholder="Nome da quadra" formControlName="nomedaquadra" id="nomedaquadra">
+          <input type="text" placeholder="Cidade" formControlName="cidade" id="cidade">
+          <input type="number" placeholder="Capacidade" formControlName="capacidade" id="capacidade">
+        </div>
+      </section>
+      <div class="div-error" [ngClass]="{'message-error':isError, 'message-correct':isCorrect}" *ngIf="aplyMessage">
+        <p id="message">{{messageText}}</p>
+      </div>
+
+      <div class="div-btn">
+        <button type="button" class="btn btn-step" *ngIf="previousButton" (click)="buttonStep('previous')">VOLTAR</button>
+        <button type="button" class="btn btn-step" *ngIf="nextButton" (click)="buttonStep('next')">PRÓXIMO</button>
+        <button type="submit" class="btn btn-step" *ngIf="submitButton">FINALIZAR</button>
+      </div>
+    </form>
+  </section>
+</section>

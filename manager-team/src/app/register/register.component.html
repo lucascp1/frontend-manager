@@ -1,0 +1,51 @@
+<section class="container-register">
+  <div class="img-register">
+    <img src="../../assets/images/Basketball-pana 1.svg" alt="">
+  </div>
+  <div class="content-register">
+    <div class="title-form">
+      <h1>CADAS<span class="border-h1-bottom">TRO</span></h1>
+    </div>
+    <form class="inputs-register" id="form_contato" method="post">
+      <section>
+        <div class="inputs-form">
+          <label for="">Nome completo:</label>
+          <input onkeyup="validacao_nome_contato()" id="ipt_nome_contato" class="inputs"
+            name="nomeContato" type="text" placeholder="Fulano Silva">
+        </div>
+        <div class="inputs-form">
+          <label for="">CPF:</label>
+          <input onkeyup="validacao_email_contato()" id="ipt_email_contato" class="inputs"
+            name="emailContato" type="text" placeholder="Ex: 111.111.111-01">
+        </div>
+        <div class="inputs-form">
+          <label for="">Login:</label>
+          <input onkeyup="validacao_telefone_contato()" id="ipt_telefone_contato" class="inputs"
+            name="telefoneContato" type="text" placeholder="fulano123">
+        </div>
+      </section>
+      <section>
+        <div class="inputs-form">
+          <label for="">Email:</label>
+          <input onkeyup="validacao_nome_contato()" id="ipt_nome_contato" class="inputs"
+            name="nomeContato" type="text" placeholder="fulano@gmail.com">
+        </div>
+        <div class="inputs-form">
+          <label for="">Telefone:</label>
+          <input onkeyup="validacao_email_contato()" id="ipt_email_contato" class="inputs"
+            name="emailContato" type="text" placeholder="(__) (_____-____)">
+        </div>
+        <div class="inputs-form">
+          <label for="">Senha:</label>
+          <input onkeyup="validacao_telefone_contato()" id="ipt_telefone_contato" class="inputs"
+            name="telefoneContato" type="password" placeholder="*********">
+        </div>
+      </section>
+    </form>
+    <div class="div-but">
+      <span>Já possuí conta?<b (click)="redirectLogin()"> Entrar</b></span>
+      <button onclick="" class="btn" type="button">CADASTRAR</button>
+      <span class="span_msg" id="span_msg"></span>
+    </div>
+  </div>
+</section>

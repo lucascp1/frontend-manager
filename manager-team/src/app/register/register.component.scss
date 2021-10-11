@@ -1,0 +1,50 @@
+@import '../../assets/styles/buttons.scss';
+@import '../../assets/styles/colors.scss';
+@import '../../assets/styles/inputs.scss';
+
+
+.container-register{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: $brown;
+    height: 100vh;
+}
+
+.img-register{
+    background-image: url('../../assets/images/wickedbackground\ 1.svg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    flex-direction: column-reverse;
+    display: flex;
+}
+.img-register img{
+    width: 55em;
+    
+}
+.content-register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.inputs-register{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 2em;
+}
+.inputs{
+    border: 1.5px solid $dark-orange;
+    border-radius: 15px;
+    font-size: 1em;
+    outline: none;
+    background: transparent;
+    color: $white;
+    margin-bottom: 24px;
+    padding: 0.9em;
+}
+
+@media screen  and (max-width: 1900px){
+    .img-register img{width: 38em;}       
+};

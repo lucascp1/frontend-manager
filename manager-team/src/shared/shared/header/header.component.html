@@ -1,0 +1,13 @@
+<header class="header-nav">
+        <div class="nav-logo">
+            <a href=""><img src="../../../assets/images/logo.svg" alt="Logo"></a>
+        </div>
+        <nav class="nav">
+            <ul *ngFor="let item of headerMenu;">
+                <li (click)="redirectHome(item)"><a>{{item.label}}</a></li>
+            </ul>
+        </nav>
+        <div class="nav-btn" href="">
+            <a class="btn" (click)="redirectLogin()">LOGIN</a>
+        </div>
+</header>

@@ -1,0 +1,32 @@
+@import '../../../assets/styles/inputs.scss';
+@import '../../../assets/styles/buttons.scss';
+@import '../../../assets/styles/colors.scss';
+
+.container-home{
+    padding: 0 3em;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+}
+
+.container-home h1{
+    color: $white;
+}
+
+.content-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-size: 50px;
+        font-family: $font-bold;
+    }
+}
+
+.content-image{
+    img{
+        width: 25em;
+    }
+}

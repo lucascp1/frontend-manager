@@ -1,0 +1,15 @@
+@import '../../assets/styles/buttons.scss';
+@import '../../assets/styles/colors.scss';
+@import '../../assets/styles/inputs.scss';
+
+.container-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../assets/images/login-bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+

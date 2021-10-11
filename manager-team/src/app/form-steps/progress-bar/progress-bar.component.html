@@ -1,0 +1,5 @@
+<div class="images-progress">
+    <div *ngFor="let step of stepsArray;let i = index">
+        <img [ngClass]="{'active': currentStep >= (i + 1)}" src="../../../assets/images/logo.svg" alt="">    
+    </div>
+</div>
